@@ -1,2 +1,1 @@
-#its just a text
-some lazy text
+# its just a text

@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: Azure Pipelines
 
 steps:
 - script: echo Hello, world!

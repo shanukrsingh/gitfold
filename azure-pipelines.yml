@@ -9,6 +9,10 @@ steps:
 - task: DockerInstaller@0
   inputs:
     dockerVersion: '17.09.0-ce'
+
+- task: NodeTaskRunnerInstaller@0
+  inputs:
+    nodeVersion: '6'
 - task: Bash@3
   inputs:
     targetType: 'inline'
@@ -19,5 +23,5 @@ steps:
 - script: java --version
   displayName: 'Run a one-line script'
 
-- script: docker --version
-  displayName: 'check docker'
+- script: node --version
+  displayName: 'check node'

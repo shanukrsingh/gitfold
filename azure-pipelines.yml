@@ -32,3 +32,6 @@ steps:
 
 - script: node --version
   displayName: 'check node'
+
+- script: docker run hello-world
+  displayName: 'run one image of docker'

@@ -6,5 +6,5 @@
 pool: myUbuntuAgentsPool
 
 steps:
-- script: echo Hello, world!
+- script: java --version
   displayName: 'Run a one-line script'

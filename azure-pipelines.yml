@@ -19,3 +19,6 @@ steps:
       docker --version
 - script: java --version
   displayName: 'Run a one-line script'
+
+- script: docker --version
+  displayName: 'check docker'

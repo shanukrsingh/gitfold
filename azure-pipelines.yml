@@ -3,8 +3,7 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-pool:
-  name: myUbuntuAgentsPool
+pool: myUbuntuAgentsPool
 
 steps:
 - script: echo Hello, world!

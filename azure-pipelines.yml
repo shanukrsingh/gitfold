@@ -3,7 +3,8 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-pool: myUbuntuAgentsPool
+pool:
+ vmImage: ubuntu-latest 
 
 steps:
 - script: java --version

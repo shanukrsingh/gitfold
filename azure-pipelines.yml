@@ -10,9 +10,15 @@ steps:
   inputs:
     dockerVersion: '17.09.0-ce'
 
-- task: NodeTaskRunnerInstaller@0
+- task: NodeTool@0
   inputs:
-    nodeVersion: '6'
+    versionSource: 'spec'
+    versionSpec: '6.x'
+    checkLatest: true
+
+- script: node --version
+  displayName: 'check node'
+
 - task: Bash@3
   inputs:
     targetType: 'inline'

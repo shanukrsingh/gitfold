@@ -7,18 +7,18 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: DockerInstaller@0
-  inputs:
-    dockerVersion: '17.09.0-ce'
+# - task: DockerInstaller@0
+#   inputs:
+#     dockerVersion: '17.09.0-ce'
 
-- task: NodeTool@0
-  inputs:
-    versionSource: 'spec'
-    versionSpec: '6.x'
-    checkLatest: true
+# - task: NodeTool@0
+#   inputs:
+#     versionSource: 'spec'
+#     versionSpec: '6.x'
+#     checkLatest: true
 
-- script: node --version
-  displayName: 'check node'
+# - script: node --version
+#   displayName: 'check node'
 
 - task: Bash@3
   inputs:

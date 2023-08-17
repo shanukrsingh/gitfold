@@ -28,8 +28,8 @@ steps:
 #       # Write your commands here
       
 #       docker --version
-- script: java --version
-  displayName: 'Run a one-line script'
+# - script: java --version
+#   displayName: 'Run a one-line script'
 
 - script: echo 'hello world'
   displayName: 'check node'

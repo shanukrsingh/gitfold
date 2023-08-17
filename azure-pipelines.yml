@@ -11,6 +11,11 @@ steps:
   inputs:
     dockerVersion: '17.09.0-ce'
 
+- task: Docker@2
+  inputs:
+    command: 'start'
+    container: 'hello-world'
+
 # - task: NodeTool@0
 #   inputs:
 #     versionSource: 'spec'
@@ -33,5 +38,5 @@ steps:
 - script: echo 'hello world'
   displayName: 'check node'
 
-- script: docker run hello-world
-  displayName: 'run one image of docker'
+# - script: docker run hello-world
+#   displayName: 'run one image of docker'

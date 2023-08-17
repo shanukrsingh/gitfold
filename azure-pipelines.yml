@@ -7,12 +7,14 @@ pool:
   name: linuxMachineOne
 
 steps:
-- task: DockerInstaller@0
-  inputs:
-    dockerVersion: '17.09.0-ce'
+# - task: DockerInstaller@0
+#   inputs:
+#     dockerVersion: '17.09.0-ce'
 
-- script: sudo service docker start
-  displayName: 'start docker demon'
+# - script: sudo service docker start
+#   displayName: 'start docker demon'
+
+
 
 - task: Docker@2
   inputs:

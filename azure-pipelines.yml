@@ -5,7 +5,6 @@
 
 pool:
   name: linuxMachineOne
-  vmImage: ubuntu-latest
 
 steps:
 - task: DockerInstaller@0

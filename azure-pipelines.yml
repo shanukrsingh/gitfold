@@ -14,12 +14,10 @@ steps:
 # - script: sudo service docker start
 #   displayName: 'start docker demon'
 
-
-
-- task: Docker@2
-  inputs:
-    command: 'start'
-    container: 'hello-world'
+# - task: Docker@2
+#   inputs:
+#     command: 'start'
+#     container: 'hello-world'
 
 # - task: NodeTool@0
 #   inputs:
@@ -45,3 +43,14 @@ steps:
 
 # - script: docker run hello-world
 #   displayName: 'run one image of docker'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      curl -fsSL https://get.docker.com -o get-docker.sh
+      sudo sh get-docker.sh
+      sudo service docker start
+      sudo docker run hello-world

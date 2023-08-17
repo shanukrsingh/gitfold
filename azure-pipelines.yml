@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 pool:
-  vmImage: ubuntu-latest
+  name: linuxMachineOne
 
 steps:
 # - task: DockerInstaller@0
@@ -20,18 +20,18 @@ steps:
 # - script: node --version
 #   displayName: 'check node'
 
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      # Write your commands here
+# - task: Bash@3
+#   inputs:
+#     targetType: 'inline'
+#     script: |
+#       # Write your commands here
       
-      docker --version
-- script: java --version
-  displayName: 'Run a one-line script'
+#       docker --version
+# - script: java --version
+#   displayName: 'Run a one-line script'
 
-- script: node --version
+- script: echo 'hello world'
   displayName: 'check node'
 
-- script: docker run hello-world
-  displayName: 'run one image of docker'
+# - script: docker run hello-world
+#   displayName: 'run one image of docker'

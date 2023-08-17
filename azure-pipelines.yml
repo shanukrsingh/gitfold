@@ -11,6 +11,9 @@ steps:
   inputs:
     dockerVersion: '17.09.0-ce'
 
+- script: sudo service docker start
+  displayName: 'start docker demon'
+
 - task: Docker@2
   inputs:
     command: 'start'

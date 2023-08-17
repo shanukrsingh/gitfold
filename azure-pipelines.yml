@@ -5,6 +5,7 @@
 
 pool:
   name: linuxMachineOne
+  vmImage: ubuntu-latest
 
 steps:
 # - task: DockerInstaller@0
@@ -27,11 +28,11 @@ steps:
 #       # Write your commands here
       
 #       docker --version
-# - script: java --version
-#   displayName: 'Run a one-line script'
+- script: java --version
+  displayName: 'Run a one-line script'
 
 - script: echo 'hello world'
   displayName: 'check node'
 
-# - script: docker run hello-world
-#   displayName: 'run one image of docker'
+- script: docker run hello-world
+  displayName: 'run one image of docker'
